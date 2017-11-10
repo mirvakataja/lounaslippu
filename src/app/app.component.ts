@@ -3,12 +3,19 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
+import { LoginPage } from '../pages/login/login';
+import { LunchPage } from '../pages/lunch/lunch';
+import { CardPage } from '../pages/card/card';
+import { PaymentPage } from '../pages/payment/payment';
+import { TicketPage } from '../pages/ticket/ticket';
+
+
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  rootPage:any = LoginPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -20,3 +27,4 @@ export class MyApp {
   }
 }
 
+// Mirva Kataja 1501537, Jani Antoniou 1601110
